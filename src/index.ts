@@ -47,11 +47,6 @@ function getSyntaxConfig(): SyntaxConfig {
 
 let syntaxConfig = getSyntaxConfig();
 
-console.log(
-    `syntaxConfig.keywords.map((t) => t.name):`,
-    syntaxConfig.keywords.map((t) => t.name)
-);
-
 let juliaStyleTags = styleTags({
     String: t.string,
     TripleString: t.string,
