@@ -8,8 +8,8 @@ export const juliaLanguage = LRLanguage.define({
     props: [
       indentNodeProp.add({
         IfStatement: continuedIndent({ except: /^\s*(end\b|else\b|elseif\b)/ }),
-        TryStatement: continuedIndent({ except: /^\s*(end\b|else\b|finally\b)/ }),
-        "Definition CompoundStatement": continuedIndent({ except: /^\s*(end\b)/ }), // node groups
+        TryStatement: continuedIndent({ except: /^\s*(end\b|else\b|catch\b|finally)/ }),
+        "Definition CompoundStatement": continuedIndent({ except: /^\s*end\b/ }), // node groups
 
         ExportStatement: continuedIndent(),
         ImportStatement: continuedIndent(),
@@ -24,7 +24,7 @@ export const juliaLanguage = LRLanguage.define({
   languageData: {
     closeBrackets: { brackets: ["(", "[", "{", "'", '"', "`", "'''", '"""', "```"] },
     commentTokens: { line: "#", block: { open: "#=", close: "=#" } },
-    indentOnInput: /^\s*(\]|\}|\)|end|else|elseif|catch|finally)$/,
+    indentOnInput: /^\s*(\]|\}|\)|end\b|else\b|elseif\b|catch\b|finally\b)$/,
   },
 });
 
