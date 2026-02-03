@@ -3,11 +3,8 @@
 This package implements [Julia](https://julialang.org) language support
 for the [CodeMirror 6](https://codemirror.net) code editor.
 
-Features:
+This is a wrapper around [`JuliaPluto/lezer-julia`](https://github.com/JuliaPluto/lezer-julia). Go there for issues, latest developments, releases and more.
 
-- Syntax highlighting based on the [Lezer Julia parser](https://github.com/JuliaPluto/lezer-julia)
-- Indentation
-- Keyword completion (optional)
 
 ## Usage
 
