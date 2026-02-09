@@ -25,6 +25,7 @@ export const juliaLanguage = LRLanguage.define({
     closeBrackets: { brackets: ["(", "[", "{", "'", '"', "`", "'''", '"""', "```"] },
     commentTokens: { line: "#", block: { open: "#=", close: "=#" } },
     indentOnInput: /^\s*(\]|\}|\)|end|else|elseif|catch|finally)$/,
+    wordChars: "⁺⁻⁼⁽⁾₉₊₋₌₍₎℘⅀⅁⅂⅃⅄𝛁𝛛𝛻𝜕𝜵𝝏𝝯𝞉𝞩𝟃!",
   },
 });
 
