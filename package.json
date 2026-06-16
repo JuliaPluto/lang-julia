@@ -1,6 +1,6 @@
 {
   "name": "@plutojl/lang-julia",
-  "version": "0.12.2",
+  "version": "1.0.0",
   "description": "Julia language support for the CodeMirror code editor",
   "scripts": {
     "prepare": "cm-buildhelper src/index.ts"
@@ -31,7 +31,7 @@
     "@codemirror/autocomplete": "^6.10.2",
     "@codemirror/language": "^6.9.1",
     "@lezer/common": "^1.1.0",
-    "@plutojl/lezer-julia": "^0.12.1"
+    "@plutojl/lezer-julia": "^1.0.0"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^1.0.2",
